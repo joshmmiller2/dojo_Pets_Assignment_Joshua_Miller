@@ -1,10 +1,8 @@
-
-
 class Pet:
 # implement __init__( name , type , tricks, noise):
-    def __init__(self, name, type, tricks, noise ):
+    def __init__(self, name, _type, tricks, noise ):
         self.name = name
-        self.type = type
+        self.type = _type
         self.tricks = tricks
         self.health = 100
         self.energy = 50
@@ -61,3 +59,6 @@ my_pet_food = ['pizza','burger']
 tobit = Pet("Mr. Tobit","dog", ["tobit on things", "is invisible"], "Hey Hey")
 josh = Ninja("Joshua", "Shelby", my_treats, my_pet_food, tobit)
 josh.feed()
+print(tobit.energy)
+print(tobit.health)
+
